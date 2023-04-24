@@ -2,9 +2,6 @@
 .DS_Store
 
 # MkDocs
-# /site/
-# /site/.m*
-# /site/search_index.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
