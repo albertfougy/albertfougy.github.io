@@ -392,16 +392,16 @@ Examples of networks categorized by their purpose would be data center networks 
 </li>
 <li>
 <p><strong>Size</strong><br />
-Looking at the size of the network in terms of the number of devices it has, there are various types of networks. Such as small networks, usually with fewer than ten devices, medium to large networks consisting of tens to hundreds of devices, and very large, global networks, such as the internet, which connects thousands of devices across the world.</p>
+Looking at the size of the network in terms of the number of devices it has, there are various types of networks. Such as small networks, usually with fewer than ten devices, medium to large networks consisting of tens to hundreds of devices, and very large, global networks, such as the internet, which connects thousands of devices across the world.  </p>
 </li>
 <li>
 <p><strong>Geographical Scope</strong><br />
-        - <strong><a href="https://en.wikipedia.org/wiki/Local_area_network">LAN</a></strong>
-  Local area networks connect devices located relatively close together in a limited area. An example would be a university campus network that can span several collocated buildings.  </p>
+        - <strong><a href="https://en.wikipedia.org/wiki/Local_area_network">LAN</a></strong><br />
+  Local area networks connect devices located relatively close together in a limited area. An example would be a university campus network that can span several collocated buildings.<br/><br/>
+  Enterprise networks often span across multiple locations, including a main office or Enterprise Campus and remote sites like branch offices or home offices of remote workers. Small office, home offices (SOHO) typically only have a few devices and primarily connect to the main office network via the internet. The main office network is usually a Local Area Network (LAN) that may consist of multiple networks occupying multiple floors or a campus with several buildings. Wireless networks are often managed through Wireless LAN Controllers (WLC), and most Enterprise Campuses have a separate data center to support business operations. Branch offices have their own LANs and resources such as printers and servers, but depend on the main office for operations and connect via a WAN or internet using routers.</p>
+<pre><code>    - An intranet is a private computer network that uses internet technologies to securely share any part of an organization's information or operational systems within that organization. So, if the LAN is limited to internal use within an organization and is not accessible to the public, it can be referred to as an intranet. However, all intranets are LANs, but not all LANs are intranets.
+</code></pre>
 <ul>
-<li>
-<p>(Special Mention)<strong><a href="https://en.wikipedia.org/wiki/Intranet">Intranet</a></strong> <em>An intranet is a private computer network that uses Internet technologies to securely share any part of an organization's information or operational systems within that organization. So, if the LAN is limited to internal use within an organization and is not accessible to the public, it can be referred to as an intranet. However, all intranets are LANs, but not all LANs are intranets.</em></p>
-</li>
 <li>
 <p><strong><a href="https://en.wikipedia.org/wiki/Wide_area_network">WAN</a></strong>
   Wide area networks cover a broad geographical area and are managed by service providers. </p>
@@ -413,44 +413,91 @@ Looking at the size of the network in terms of the number of devices it has, the
 </ul>
 </li>
 </ul>
+<p>Enterprise networks are crucial to business activities, and they must be secure, resilient, and allow for growth. Network engineers often use validated network architecture models like the Cisco three-tier hierarchical network architecture model, the spine-leaf model, and the Cisco Enterprise Architecture model to assist in designing and implementing enterprise networks. These models provide hierarchical structure to enterprise networks in the form of layers such as LAN Access and LAN Core, which offer different functionalities.</p>
 <p><img src="../images/cisco-enterprise-networks.png">
 <em>Cisco Enterprise Architecture Model</em>  </p>
-<!--
-In the realm of medium-to-large enterprise networks, it's common for them to span across multiple locations, such as a main office or Enterprise Campus that houses most of the corporate resources, and remote sites like branch offices or home offices of remote workers. The latter is typically referred to as a small office, home office (SOHO), which generally only has a few devices and primarily connects to the main office network via the internet. The main office network is usually a Local Area Network (LAN) that may consist of multiple networks occupying multiple floors or a campus with several buildings. Wireless networks are often required on a large scale in corporate environments and are managed through Wireless LAN Controllers (WLC). Additionally, most Enterprise Campuses have a separate data center that houses the computational power, storage, and applications necessary to support business operations. A firewall is typically used to protect internet connectivity, and branch offices have their own LANs and resources such as printers and servers, but depend on the main office for operations and connect via a WAN or internet using routers.
-
-Due to their importance in supporting business activities, enterprise networks must be secure, resilient, and allow for growth. The design of a network requires extensive technical knowledge, and network engineers often utilize validated network architecture models such as the Cisco three-tier hierarchical network architecture model, the spine-leaf model, and the Cisco Enterprise Architecture model to assist in their design and implementation. These models provide hierarchical structure to enterprise networks in the form of layers, such as LAN Access and LAN Core, which provide different functionalities.
--->
 <h3 id="protocols">Protocols<a class="headerlink" href="#protocols" title="Anchor link to this section for reference">#</a></h3>
 <p>Why do we need network protocols/standards?</p>
 <p>Network protocols are a set of rules that define how devices communicate with each other in a network. These protocols include specifications such as signal voltage, allowable messages, message structure, lost message management, and error handling. They establish a common set of guidelines for all devices in a network, ensuring that information can be transmitted and received reliably and efficiently.</p>
 <p>The need for network protocols arises from the fact that devices need an agreed-upon system of communicating, much like two people speaking the same language. Ethernet, for example, is a collection of network protocols and standards that serves as an example of such a system for network devices. Ethernet includes protocols for media access, packet structure, and error handling, which allows devices to communicate with each other in a standardized way.</p>
 <p>Similarly, the internet follows a well-defined set of protocol rules, specifically designed for internet communication. These protocols dictate how data is transmitted between devices in networks and how devices communicate with each other. Industry-standard protocols are typically created by various networking or information technology organizations. Examples of such organizations include the Internet Engineering Task Force (IETF), the Institute of Electrical and Electronics Engineers (IEEE), and the International Organization for Standardization (ISO).</p>
 <p>The internet is a global infrastructure composed of many computer networks that follow standardized communication rules. It supports various data exchange services, such as email or file transfers. The protocols and processes of the internet are defined in a set of documents called Request for Comments (RFCs). These documents are maintained by the Internet Engineering Task Force and are freely available to the public. By following standardized protocols and processes, the internet allows devices and networks to communicate with each other in a reliable and efficient manner, making it one of the most important technological innovations of modern times.</p>
-<p>In the following examples, you will browse through some of the RFCs that you can find at <a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/</a>.
+<p>In the following examples, you will browse through some of the RFCs that you can find at <a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/</a>.<br/><br/>
 <strong>Note</strong><br />
 <em>The words internet and web are often used interchangeably, but they do not share the same meaning. The internet is a global network that interconnects many networks and therefore provides a worldwide communication infrastructure. The World Wide Web describes one way to provide and access information over the internet using a web browser. It is a service that relies on connections provided by the internet for its function.</em></p>
 <h2 id="common-usage-of-computer-network">Common Usage of Computer Network<a class="headerlink" href="#common-usage-of-computer-network" title="Anchor link to this section for reference">#</a></h2>
+<p>Computer networks are built with one primary purpose—To enable communication.</p>
 <h2 id="components-of-a-network">Components of a Network<a class="headerlink" href="#components-of-a-network" title="Anchor link to this section for reference">#</a></h2>
 <ol>
-<li>
-<p>Router</p>
-</li>
-<li>
-<p>Switch</p>
-</li>
-<li>
-<p>Firewall</p>
-</li>
-<li>
-<p>Server (also known end hosts or endpoints)
-A device that provides functions or services for a client.</p>
-</li>
-<li>
-<p>Client(also known end hosts or endpoints)
-A client is a device that accesses a service made available by a server.</p>
-</li>
+<li>Router</li>
+<li>Switch</li>
+<li>Firewall</li>
+<li>Server: A device that provides functions or services for a client.</li>
+<li>Client: A client is a device that accesses a service made available by a server.<br/><br/>
+<em>Servers and clients, also known as end hosts or endpoints, are remote computing devices that communicate bidirectionally with the connected network</em></li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>OSI Reference Model</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Application</strong></td>
+<td>http (tcp 80), https (tcp 443), ftp (tcp 20,21), telnet (tcp 23), tftp (udp 69),SMTP (tcp 25), DNS (tcp and udp 53)</td>
+</tr>
+<tr>
+<td><strong>Presentation</strong></td>
+<td>translation ASCII, EBCDIC (.wav, .jpg, .mov, .avi, etc.)</td>
+</tr>
+<tr>
+<td><strong>Session</strong></td>
+<td>establishing, maintaining and terminating the connection RPC(remote procedure call), SMB, ZIP (zone information protocol)</td>
+</tr>
+<tr>
+<td><strong>Transport</strong></td>
+<td>tcp (connection oriented) udp (connectionless)</td>
+</tr>
+<tr>
+<td><strong>Network</strong></td>
+<td>IP , ICMP, IGMP, ARP, RARP, INVERSE-ARP, RIP, RIPv2 , IGRP, EIGRP, OSPF, IS-IS</td>
+</tr>
+<tr>
+<td><strong>Data Link</strong></td>
+<td>LLC(Logical Link Control) CSMA/CA, LAPF (uses Frame-Relay[deprecated]), ATM (Asynchronous Transfer Mode), SONET (Synchronous Optical Network), HDLC, PPP physical address (MAC address)</td>
+</tr>
+<tr>
+<td><strong>Physical</strong></td>
+<td>media, electrical, procedural and mechanical standards IEEE 802.3 (ETH), 802.11 (wireless) CAT 5,6</td>
+</tr>
+</tbody>
+</table>
 <h2 id="characteristics-of-a-network">Characteristics of a Network<a class="headerlink" href="#characteristics-of-a-network" title="Anchor link to this section for reference">#</a></h2>
+<ul>
+<li>
+<p>Topology</p>
+</li>
+<li>
+<p>Speed</p>
+</li>
+<li>
+<p>Cost</p>
+</li>
+<li>
+<p>Security</p>
+</li>
+<li>
+<p>Availability</p>
+</li>
+<li>
+<p>Scalability</p>
+</li>
+<li>
+<p>Reliability</p>
+</li>
+</ul>
 <h2 id="physical-vs-logical-topologies">Physical vs. Logical Topologies<a class="headerlink" href="#physical-vs-logical-topologies" title="Anchor link to this section for reference">#</a></h2>
 <h2 id="interpreting-a-network-diagram">Interpreting a Network Diagram<a class="headerlink" href="#interpreting-a-network-diagram" title="Anchor link to this section for reference">#</a></h2>
 <h2 id="impact-of-user-applications-on-the-network">Impact of User Applications on the Network<a class="headerlink" href="#impact-of-user-applications-on-the-network" title="Anchor link to this section for reference">#</a></h2>
