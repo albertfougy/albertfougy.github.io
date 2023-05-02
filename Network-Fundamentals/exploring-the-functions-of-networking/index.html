@@ -414,7 +414,7 @@ Looking at the size of the network in terms of the number of devices it has, the
 </li>
 </ul>
 <p>Enterprise networks are crucial to business activities, and they must be secure, resilient, and allow for growth. Network engineers often use validated network architecture models like the Cisco three-tier hierarchical network architecture model, the spine-leaf model, and the Cisco Enterprise Architecture model to assist in designing and implementing enterprise networks. These models provide hierarchical structure to enterprise networks in the form of layers such as LAN Access and LAN Core, which offer different functionalities.</p>
-<p><img src="../images/cisco-enterprise-networks.png">
+<p><img alt="Cisco Enterprise Architecture Model" src="/Network-Fundamentals/images/cisco-enterprise-networks.png" />
 <em>Cisco Enterprise Architecture Model</em>  </p>
 <h3 id="protocols">Protocols<a class="headerlink" href="#protocols" title="Anchor link to this section for reference">#</a></h3>
 <p>Why do we need network protocols/standards?</p>
@@ -446,6 +446,41 @@ Looking at the size of the network in terms of the number of devices it has, the
 <li>Client: A client is a device that accesses a service made available by a server.<br/><br/>
 <em>Servers and clients, also known as end hosts or endpoints, are remote computing devices that communicate bidirectionally with the connected network.</em></li>
 </ol>
+<p><img alt="Network Components" src="/Network-Fundamentals/images/network-components.png" /></p>
+<p>Network Devices
+Devices can be further divided into endpoints and intermediary devices:</p>
+<ul>
+<li>
+<p>Endpoints: In the context of a network, endpoints are called end-user devices and include PCs, laptops, mobile phones, and smart home components. They can also include file servers, printers, sensors, and cameras. While end devices used to be physical hardware units, virtualization now allows for one physical device to emulate multiple end devices, optimizing resource utilization. In virtualization, the emulated computer system operates as a separate physical unit with its own operating system and software, using the host device's resources to perform its functions.</p>
+</li>
+<li>
+<p>Intermediary devices: These devices interconnect end devices or interconnect networks. In doing so, they perform different functions, which include regenerating and retransmitting signals, choosing the best paths between networks, classifying and forwarding data according to priorities, filtering traffic to allow or deny it based on security settings, and so on. As endpoints can be virtualized, so can intermediary devices or even entire networks. The concept is the same as in the endpoint virtualization—the virtualized element uses a subset of resources available at the physical host system. Intermediary devices that are commonly found in enterprise networks are:  </p>
+<ul>
+<li>
+<p>Switches: These devices enable multiple endpoints such as PCs, file servers, printers, sensors, cameras, and manufacturing robots to connect to the network. Switches are used to allow devices to communicate on the same network. In general, a switch or group of interconnected switches attempt to forward messages from the sender so it is only received by the destination device. Usually, all the devices that connect to a single switch or a group of interconnected switches belong to a common network and can therefore communicate directly with each other. If an end device wants to communicate with a device that is on a different network, then it requires "services" of a device that is known as a router, which connects different networks together.</p>
+</li>
+<li>
+<p>Routers: These devices connect networks and intelligently choose the best paths between networks. Their main function is to route traffic from one network to another. For example, you need a router to connect your office network to the internet. An analogy that may help you understand the basic function of switches and routers is to imagine a network as a neighborhood. A switch is a street that connects the houses, and routers are the crossroads of those streets. The crossroads contain helpful information such as road signs to help you in finding a destination address. Sometimes, you might need the destination after just one crossroad, but other times you might need to cross several. The same is true in networking. Data sometimes "stops" at several routers before it is delivered to the final recipient. Certain switches combine functionalities of routers and switches, and they are called Layer 3 switches.</p>
+</li>
+<li>
+<p>APs: These devices allow wireless devices to connect to a wired network. An AP usually connects to a switch as a standalone device, but it also can be an integral component of the router itself.</p>
+</li>
+<li>
+<p>WLCs: These devices are used by network administrators or network operations centers to facilitate the management of many APs. The WLC automatically manages the configuration of wireless APs.</p>
+</li>
+<li>
+<p>Cisco Secure Firewalls: Firewalls are network security systems that monitor and control the incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted, secure internal network and another outside network, such as the internet, that is assumed not to be secure or trusted.</p>
+</li>
+<li>
+<p>Intrusion Protection System (IPS): An IPS is a system that performs a deep analysis of network traffic while searching for signs that behavior is suspicious or malicious. If the IPS detects such behavior, it can take protective action immediately. An IPS and a firewall can work in conjunction to defend a network.</p>
+</li>
+<li>
+<p>Management Services: A modern management service offers centralized management that facilitates designing, provisioning, and applying policies across a network. It includes features for discovery and management of network inventory, management of software images, device configuration automation, network diagnostics, and policy configuration. It provides end-to-end network visibility and uses network insights to optimize the network. An example of a centralized management service is Cisco DNA Center.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Network Breakdown" src="/Network-Fundamentals/images/network-components-breakdown.png" /></p>
 <table>
 <thead>
 <tr>
