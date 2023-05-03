@@ -1,4 +1,4 @@
-# [albertfougy.com](https://albertfougy.com).
+# [albertfougy.com](https://albertfougy.com)
 
 ## Notes on Executing and Deploying Project.
 
